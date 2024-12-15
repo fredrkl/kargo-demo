@@ -1,6 +1,6 @@
 # Kargo Demo
 
-Demo setting up a multicluster CI/CD pipeline with Kargo.
+Demo setting up a multicluster CI/CD pipeline with Kargo. This repo is intended to control multiple clusters
 
 This repo uses [gitmoji](https://gitmoji.dev/) for commit messages.
 
@@ -23,7 +23,34 @@ graph TD;
     kargo -->|promoting images| clusterb
 ```
 
-This diagram will evolve as I learn more about Kargo.
+### Setup Kargo
+
+Following the instructions in the [Kargo README](https://docs.kargo.io/how-to-guides/installing-kargo) to install Kargo.
+
+Cert Manger is required for Kargo. Install it with the following command:
+
+```bash
+helm install cert-manager jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.16.2 --set crds.enabled=true --set prometheus.enabled=false --set webhook.timeoutSeconds=4
+```
+
+ArgoCD is required for Kargo. Install it with the following command:
+
+```bash
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+
+Access the ArgoCD UI with the following command:
+
+```bash
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+```
+
+Username is `admin` and password is the output from:
+
+```bash
+argocd admin initial-password -n argocd
+```
 
 ## Questions
 
