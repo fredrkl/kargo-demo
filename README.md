@@ -2,6 +2,8 @@
 
 Demo setting up a multicluster CI/CD pipeline with Kargo.
 
+This repo uses [gitmoji](https://gitmoji.dev/) for commit messages.
+
 ## Questions
 
 This repo wants to answer the following questions:
