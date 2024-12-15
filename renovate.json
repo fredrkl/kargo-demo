@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "platform": "github",
+  "semanticCommits": "enabled",
+  "rebaseWhen": "never",
+  "labels": ["dependencies"],
+  "repositories": ["fredrkl/kargo-demo"],
+  "packageRules": [
+    {"matchManagers": ["nuget"], "enabled": true},
+    {"matchUpdateTypes": ["major"], "semanticCommitType": "feat"},
+    {"matchUpdateTypes": ["minor"], "semanticCommitType": "feat"},
+    {"matchUpdateTypes": ["patch"], "semanticCommitType": "fix"}
+  ]
+}
