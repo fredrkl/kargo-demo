@@ -81,6 +81,8 @@ helm install kargo \
 kubectl port-forward svc/kargo-api -n kargo 8080:443
 ```
 
+The password is `admin`.
+
 ## Resources
 
 - [Platform Engineering](https://www.youtube.com/watch?v=0B_JODxyK0w&ab_channel=PlatformEngineering)
