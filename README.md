@@ -23,7 +23,9 @@ graph TD;
     kargo -->|promoting images| clusterb
 ```
 
-### Setup Kargo
+## Setup Kargo
+
+### Cert Manager
 
 Following the instructions in the [Kargo README](https://docs.kargo.io/how-to-guides/installing-kargo) to install Kargo.
 
@@ -32,6 +34,8 @@ Cert Manger is required for Kargo. Install it with the following command:
 ```bash
 helm install cert-manager jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.16.2 --set crds.enabled=true --set prometheus.enabled=false --set webhook.timeoutSeconds=4
 ```
+
+### ArgoCD
 
 ArgoCD is required for Kargo. Install it with the following command:
 
@@ -50,6 +54,13 @@ Username is `admin` and password is the output from:
 
 ```bash
 argocd admin initial-password -n argocd
+```
+
+### Argo Rollouts
+
+```bash
+kubectl create namespace argo-rollouts
+kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
 ```
 
 ## Questions
