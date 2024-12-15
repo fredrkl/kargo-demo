@@ -74,6 +74,18 @@ helm install kargo \
   --set api.adminAccount.tokenSigningKey=iwishtowashmyirishwristwatch \
   --wait
 ```
+
+## Access Kargo UI
+
+```bash 
+kubectl port-forward svc/kargo-api -n kargo 8080:443
+```
+
+## Resources
+
+- [Platform Engineering](https://www.youtube.com/watch?v=0B_JODxyK0w&ab_channel=PlatformEngineering)
+- [Kargo GA youtube](https://www.youtube.com/watch?v=GvGt0yuApvE&ab_channel=Akuity)
+
 ## Questions
 
 This repo wants to answer the following questions:
