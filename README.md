@@ -4,6 +4,27 @@ Demo setting up a multicluster CI/CD pipeline with Kargo.
 
 This repo uses [gitmoji](https://gitmoji.dev/) for commit messages.
 
+## Environment
+
+This demo will setup the following environment:
+
+```mermaid
+graph TD;
+    clustera[Cluster A]
+    clusterb[Cluster B]
+    kargo[Kargo]
+    constainerreg[Container Registry]
+    gitopsrepo[GitOps Repo]
+
+    %% Interactions
+    kargo -->|listening for new images| constainerreg
+    kargo -->|syncing with GitOps repo| gitopsrepo
+    kargo -->|promoting images| clustera
+    kargo -->|promoting images| clusterb
+```
+
+This diagram will evolve as I learn more about Kargo.
+
 ## Questions
 
 This repo wants to answer the following questions:
