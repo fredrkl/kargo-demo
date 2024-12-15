@@ -63,6 +63,17 @@ kubectl create namespace argo-rollouts
 kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
 ```
 
+### Kargo
+
+```bash
+helm install kargo \
+  oci://ghcr.io/akuity/kargo-charts/kargo \
+  --namespace kargo \
+  --create-namespace \
+  --set api.adminAccount.passwordHash='$2a$10$Zrhhie4vLz5ygtVSaif6o.qN36jgs6vjtMBdM6yrU1FOeiAAMMxOm' \
+  --set api.adminAccount.tokenSigningKey=iwishtowashmyirishwristwatch \
+  --wait
+```
 ## Questions
 
 This repo wants to answer the following questions:
