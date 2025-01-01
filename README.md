@@ -83,6 +83,30 @@ kubectl port-forward svc/kargo-api -n kargo 8080:443
 
 The password is `admin`.
 
+## Accessing the ArgoCD UI
+
+Get the initial password with the following command:
+```bash
+k get secrets argocd-initial-admin-secret -n argocd -o yaml
+```
+
+Ignore the last `%` in the password.
+
+Then access the UI with the following command:
+```bash
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+```
+
+And:
+| Name     | Value      |
+|----------|------------|
+| Username | admin      |
+| Password | <password> |
+
+## Kargo Docs Quickstart
+
+- I then follow the [Kargo Docs Quickstart](https://docs.kargo.io/quickstart) to setup a new project.
+
 ## Resources
 
 - [Platform Engineering](https://www.youtube.com/watch?v=0B_JODxyK0w&ab_channel=PlatformEngineering)
@@ -94,4 +118,5 @@ This repo wants to answer the following questions:
 - How to setup a multicluster CI/CD pipeline with Kargo?
 - Do I need to install ArgoCD on each cluster?
 - How does Kargo communicate with ArgoCD in each cluster?
+-- Through K8s API. It pushes to the API server in each cluster. However, it still follow the GitOps model.
 - How can I avoid a recursive loop when syncing the same repo in each cluster and making changes to the GitOps repo?
