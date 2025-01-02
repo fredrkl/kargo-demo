@@ -1,3 +1,9 @@
+# [v1.2.0](https://github.com/fredrkl/kargo-demo/compare/v1.1.0...v1.2.0) (2025-01-02)
+
+## ✨ New Features
+- [`5a8ef01`](https://github.com/fredrkl/kargo-demo/commit/5a8ef01)  ArgoCD applications 
+- [`3b97ef0`](https://github.com/fredrkl/kargo-demo/commit/3b97ef0)  Kargo configuration
+
 # [v1.1.0](https://github.com/fredrkl/kargo-demo/compare/v1.0.0...v1.1.0) (2024-12-15)
 
 ## ✨ New Features
