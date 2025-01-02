@@ -93,15 +93,10 @@ k get secrets argocd-initial-admin-secret -n argocd -o yaml
 Ignore the last `%` in the password.
 
 Then access the UI with the following command:
+
 ```bash
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
-
-And:
-| Name     | Value      |
-|----------|------------|
-| Username | admin      |
-| Password | <password> |
 
 ## Kargo Docs Quickstart
 
