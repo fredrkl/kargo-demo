@@ -1,3 +1,8 @@
+# [v1.3.0](https://github.com/fredrkl/kargo-demo/compare/v1.2.0...v1.3.0) (2025-01-03)
+
+## ✨ New Features
+- [`0b56946`](https://github.com/fredrkl/kargo-demo/commit/0b56946)  Kargo bootstrap
+
 # [v1.2.0](https://github.com/fredrkl/kargo-demo/compare/v1.1.0...v1.2.0) (2025-01-02)
 
 ## ✨ New Features
