@@ -4,6 +4,14 @@ Demo setting up a multicluster CI/CD pipeline with Kargo. This repo is intended 
 
 This repo uses [gitmoji](https://gitmoji.dev/) for commit messages.
 
+## Kickoff
+
+To setup kargo you will need a kargo-demo-repo Secret. The secret contains the:
+
+- GitOps repo URL
+- GitOps username
+- GitOps password
+
 ## Environment
 
 This demo will setup the following environment:
