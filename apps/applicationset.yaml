@@ -18,7 +18,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/fredrkl/kargo-demo.git
+        repoURL: https://github.com/fredrkl/kargo-demo-gitops.git
         targetRevision: stage/{{stage}}
         path: .
       destination:
