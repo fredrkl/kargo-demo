@@ -1,3 +1,8 @@
+# [v1.4.0](https://github.com/fredrkl/kargo-demo/compare/v1.3.0...v1.4.0) (2025-01-04)
+
+## ✨ New Features
+- [`1123e35`](https://github.com/fredrkl/kargo-demo/commit/1123e35)  (apps): bootstrap
+
 # [v1.3.0](https://github.com/fredrkl/kargo-demo/compare/v1.2.0...v1.3.0) (2025-01-03)
 
 ## ✨ New Features
