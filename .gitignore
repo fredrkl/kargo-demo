@@ -1,4 +1,4 @@
 secrets.md
 notes.md
 output.yaml
-apps/kargo-secrets.yaml
+bootstrap/kargo-secrets.yaml
