@@ -14,9 +14,6 @@ spec:
       repoURL: public.ecr.aws/nginx/nginx
       semverConstraint: ^1.26.0
       discoveryLimit: 5
-  - image:
-      repoURL: public.ecr.aws/ubuntu/mysql
-      discoveryLimit: 5
 ---
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Stage
