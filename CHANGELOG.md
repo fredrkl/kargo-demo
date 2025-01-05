@@ -1,3 +1,8 @@
+# [v1.5.0](https://github.com/fredrkl/kargo-demo/compare/v1.4.0...v1.5.0) (2025-01-05)
+
+## ✨ New Features
+- [`2e61a9e`](https://github.com/fredrkl/kargo-demo/commit/2e61a9e)  Another image in warehouse
+
 # [v1.4.0](https://github.com/fredrkl/kargo-demo/compare/v1.3.0...v1.4.0) (2025-01-04)
 
 ## ✨ New Features
