@@ -6,6 +6,17 @@ metadata:
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse
 metadata:
+  name: kargo-demo-again
+  namespace: kargo-demo
+spec:
+  subscriptions:
+  - image:
+      repoURL: public.ecr.aws/ubuntu/mysql
+      discoveryLimit: 5
+---
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Warehouse
+metadata:
   name: kargo-demo
   namespace: kargo-demo
 spec:
