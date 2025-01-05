@@ -16,7 +16,7 @@ spec:
       discoveryLimit: 5
   - image:
       repoURL: public.ecr.aws/ubuntu/ubuntu
-      semverConstraint: ^25.0
+      semverConstraint: ^25.0.0
       discoveryLimit: 5
 ---
 apiVersion: kargo.akuity.io/v1alpha1
