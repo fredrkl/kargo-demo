@@ -14,6 +14,11 @@ spec:
       repoURL: public.ecr.aws/nginx/nginx
       semverConstraint: ^1.26.0
       discoveryLimit: 5
+  - image:
+      strictSemvers: false
+      repoURL: rminz/go-app-foo
+      semverConstraint: ^1.0.0
+      discoveryLimit: 5
 ---
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Stage
