@@ -14,6 +14,10 @@ spec:
       repoURL: public.ecr.aws/nginx/nginx
       semverConstraint: ^1.26.0
       discoveryLimit: 5
+  - git:
+      branch: main
+      discoveryLimit: 5
+      repoURL: https://github.com/fredrkl/kargo-demo-gitops
 ---
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Stage
