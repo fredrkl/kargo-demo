@@ -1,3 +1,8 @@
+# [v1.6.0](https://github.com/fredrkl/kargo-demo/compare/v1.5.0...v1.6.0) (2025-01-08)
+
+## ✨ New Features
+- [`ef935db`](https://github.com/fredrkl/kargo-demo/commit/ef935db)  Gitrepo in warehouse
+
 # [v1.5.0](https://github.com/fredrkl/kargo-demo/compare/v1.4.0...v1.5.0) (2025-01-05)
 
 ## ✨ New Features
